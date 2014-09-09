@@ -1,37 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>codeQuiz</title>
-</head>
+
 <body>
   <h1>Welcome to codeQuiz</h1>
   {{> quizContainer}}
 </body>
   
 <template name="quizContainer">
-  <div id="playerNames">
-    <p id="playerOne">Player1</p>
-    <p id='playerTwo'>Player2</p>
+  <div id="playerNames" class="row">
+    <div id="playerOne" class="small-12 medium-6 large-6 columns">Player1</div>
+    <div id="playerTwo" class="small-12 medium-6 large-6 columns">Player2</div>
   </div>
-  <div id="playerScores">
-    <p id="playerOneScore">Score1</p>
-    <p id="playerTwoScore">Score2</p>
+  <div id="playerScores" class="row">
+    <div id="playerOneScore" class="small-12 medium-6 large-6 columns">Score1</div>
+    <div id="playerTwoScore" class="small-12 medium-6 large-6 columns">Score2</div>
   </div>
   {{> questionAndAnswerContainer}}
 </template>
 
 <template name="questionAndAnswerContainer">
-  <div id="question">Question</div>
-  <div id="possibleAnswers">Answers
-    <li>ans1</li>
-    <li>ans2</li>
-    <li>ans3</li>
-    <li>ans4</li>
-    <li>ans5</li>
+  <div id="questionAnswer" class="row">
+    <div id="question" class="small-12 medium-12 large-12 columns">Question</div>
+    <div id="possibleAnswers" class="small-12 medium-12 large-12 columns">Answers
+      <div>ans1</div>
+      <div>ans2</div>
+      <div>ans3</div>
+      <div>ans4</div>
+    </div>
   </div>
+  <div id="player1Icon"></div>
+  <div id="player2Icon"></div>
 </template>
 
-<div id="player1Icon"></div>
-<div id="player2Icon"></div>
 
-</html>

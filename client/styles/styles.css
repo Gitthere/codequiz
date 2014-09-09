@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+}
+
+#playerNames {
+  background-color: red;
+}
+
+#playerOne {
+  float: left;
+}
+
+#playerTwo {
+  float: right;
+}
+
+#playerScores {
+  background-color: green;
+}
+
+#playerOneScore {
+  float: left;
+}
+
+#playerTwoScore {
+  float: right;
+}
+
+
+#question {
+  background-color: yellow;
+  margin: auto ;
+  text-align: center;
+}
+
+
+#possibleAnswers {
+  background-color: blue;
+  list-style-type: none;
+  text-align: center;
+}
