@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>codeQuiz</title>
+</head>
+<body>
+  <h1>Welcome to codeQuiz</h1>
+  {{> quizContainer}}
+</body>
+  
+<template name="quizContainer">
+  <div id="playerNames">
+    <p id="playerOne">Player1</p>
+    <p id='playerTwo'>Player2</p>
+  </div>
+  <div id="playerScores">
+    <p id="playerOneScore">Score1</p>
+    <p id="playerTwoScore">Score2</p>
+  </div>
+  {{> questionAndAnswerContainer}}
+</template>
+
+<template name="questionAndAnswerContainer">
+  <div id="question">Question</div>
+  <div id="possibleAnswers">Answers
+    <li>ans1</li>
+    <li>ans2</li>
+    <li>ans3</li>
+    <li>ans4</li>
+  </div>
+</template>
+
+<div id="player1Icon"></div>
+<div id="player2Icon"></div>
+
+</html>
