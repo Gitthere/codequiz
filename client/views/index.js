@@ -22,10 +22,9 @@ Session.setDefault("counter", 0);
 
 //set up collection of questions for random generation
 Template.questionAndAnswerContainer.question = function() {
-  return Session.get("currentQuestion");
+  return Questions.find({}, { limit : 1}).fetch()[0];
 };
-
-setInterval(function() {
-  console.log('test');
-  Session.set("currentQuestion", Date.now);
-}, 1000);
+// setInterval(function() {
+//   console.log('test');
+//   Session.set("currentQuestion", Date.now);
+// }, 1000);

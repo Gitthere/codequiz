@@ -18,16 +18,21 @@
 
 <template name="questionAndAnswerContainer">
   <div id="questionAnswer" class="row">
-    <div id="question" class="small-12 medium-12 large-12 columns">{{ question }}</div>
-    <div id="possibleAnswers" class="small-12 medium-12 large-12 columns">Answers
-      <div>ans1</div>
-      <div>ans2</div>
-      <div>ans3</div>
-      <div>ans4</div>
+    <div id="question" class="small-12 medium-12 large-12 columns">{{ question.body }}</div>
+    <div id="possibleAnswers" class="small-12 medium-12 large-12 columns">
+      <div>
+        {{#each question.answers}}
+          {{> answer}}
+        {{/each}}
+      </div>
     </div>
   </div>
   <div id="player1Icon"></div>
   <div id="player2Icon"></div>
+</template>
+
+<template name="answer">
+  <li class="answer">{{answer}}</li>
 </template>
 
 
