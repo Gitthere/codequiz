@@ -3,25 +3,48 @@ Meteor.startup(function () {
     if (Questions.find({}).fetch().length === 0) {
       //seed data
       Questions.insert({
-        body : "How old are you?",
+        body : "In the MEAN stack, what does the 'A' stand for?",
         answers : [
           {
-            answer: "ten",
+            answer: "Apache",
             correct: false
           },
           {
-            answer: "seven",
+            answer: "Asynchronous",
             correct: false
           },
           {
-            answer: "six",
+            answer: "Angular",
             correct: true
           },
           {
-            answer: "four",
+            answer: "Adobe",
+            correct: false
+          },
+        ]
+      });//******* SYNTAX FOR INSERTING ADDTL QUES?
+
+      Questions.insert({
+        body : "In the LAMP stack, what does the 'A' stand for?",
+        answers : [
+          {
+            answer: "ALSO",
+            correct: false
+          },
+          {
+            answer: "APPLE",
+            correct: false
+          },
+          {
+            answer: "AUTO",
+            correct: true
+          },
+          {
+            answer: "ANT",
             correct: false
           },
         ]
       });
+
     }
 });

@@ -1,5 +1,14 @@
+body {
+  background-color: black;
+}
+
+div {
+  color: white;
+}
+
 h1 {
   text-align: center;
+  color: white;
 }
 
 #playerNames {
@@ -9,11 +18,15 @@ h1 {
 #playerOne {
   float: left;
   text-align: center;
+  font-style: bold;
+  color: white;
 }
 
 #playerTwo {
   float: right;
   text-align: center;
+  font-style: bold;
+  color: white;
 }
 
 #playerScores {
